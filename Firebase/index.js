@@ -14,10 +14,10 @@ exports.scanner = functions.https.onCall(async(data, context) => {
     /*const searches = data.bounds;*/
     const fileName = data.file;
     const pages = data.pages
-    var bucket = storage.bucket('testocr-1100.appspot.com');       
+    var bucket = storage.bucket('?');       
     var newbuck = storage.bucket('receiver-bucket-test')
     const client = new vision.ImageAnnotatorClient();
-    var enrtybucket = 'testocr-1100.appspot.com';
+    var enrtybucket = '?';
     var exitbucket = 'receiver-bucket-test';
     const gcsSourceUri = `gs://${enrtybucket}/${fileName}`;
     const gcsDestinationUri = `gs://${exitbucket}/${fileName}/`;
