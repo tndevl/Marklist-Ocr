@@ -1,0 +1,7 @@
+# Function dependencies, for example:
+# package>=version
+shapely 
+numpy 
+google-cloud-vision
+google-cloud-storage
+flask 
